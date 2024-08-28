@@ -1,0 +1,9 @@
+
+{ "homepage": "https://Shyngis.github.io/abc_test",
+  "dependencies": {
+    
+    
+     "predeploy": "npm run build",
+      "deploy":"gh-pages -d build"
+  }
+}
