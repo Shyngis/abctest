@@ -1,5 +1,9 @@
 body {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
+  /* padding: 0 20px; */
+  /* margin: 0 20px; */
+  margin: 0;
+
 }
 
 header {
@@ -15,7 +19,8 @@ header {
 .logo {
   display: flex;
   align-items: center;
-  width: auto;
+  width: 60%;
+  
 }
 
 .logo img {
@@ -24,6 +29,10 @@ header {
 }
 .logo h1{
   color: #1E3A8A;
+}
+
+nav {
+  margin-left: 20%;
 }
 nav ul {
   list-style: none;
@@ -47,6 +56,10 @@ nav ul li a {
 .contact {
   font-size: 18px;
   border-bottom: 3px dashed #a9a8a8;
+}
+
+.contact a {
+  text-decoration: none;
 }
 
 main {
@@ -217,7 +230,7 @@ position: absolute;
   justify-content: center;
   align-items: center;
   padding: 20px;
- 
+  margin: 20px;
   border-radius: 10px;
   background-color:#f1f1f1;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
@@ -258,9 +271,938 @@ position: absolute;
   justify-content:space-between;
   align-items: center;
   padding: 20px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   border-radius: 10px;
   background-color: #F3D07B;
   margin: 15px;
   /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+  }
+
+  .logo img {
+    max-height: 40px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 5px 0 0 0;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  .contact {
+    margin-top: 10px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo h1 {
+    font-size: 16px;
+  }
+
+  nav ul {
+    padding: 0;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  .contact {
+    font-size: 10px;
+  }
+}
+
+.main-1 {
+  display: flex;
+  flex-direction: row;
+  background: #F5F5F5
+;
+  margin: 20px 40px;
+  border-radius: 10px;
+
+}
+
+.main-1 .post-school{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  padding: 0 20px;
+  
+}
+.post-school h2
+{
+  
+  margin-left: 10px;
+  font-size: 45px;
+  
+}
+
+.post-school p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.post-school button{
+  margin-left: 10px;
+  background: #273953;
+  padding: 20px 30px;
+  font:600;
+  font-size: 24px;
+  color: white;
+  border-radius: 15px;
+  border: 1px;
+  
+}
+.post-school .zarubej {
+  background: #F4D07B;
+}
+
+.main-1 .image-container{
+  position: relative;
+  display: inline-block;
+}
+
+.image-container img {
+  display: block;
+  /* Ensures the image behaves like a block element */
+  width: 100%;
+  /* Optional: Adjusts the image to fill the container width */
+}
+
+.image-container h5 {
+  position: absolute;
+  top: 40px;
+  
+  left: 60%;
+  /* transform: translateX(20%); */
+  /* Centers the text horizontally */
+  /* margin: 0; */
+  color: #292929;
+  
+  
+  
+  font-size: 18px;
+  
+}
+
+.image-container h5 .author{
+  font-weight: 100;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.main-2{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 20px;
+
+}
+
+.main-2 .text-part{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 5px 20px;
+}
+.main-2 .text-part p {
+  font-size: 18px;
+  text-align: center;
+  
+  border-bottom: 2px solid #909090;
+  width: 100%;
+  cursor: pointer;
+    /* Makes it clear the element is clickable */
+    margin: 10px 0;
+}
+.main-2 .text-part  .main-text {
+  
+  border-bottom: 2px solid #F4D07B;
+  width: 100%;
+  font-weight: bold;
+}
+
+.info {
+  margin-left: 20px;
+  /* Indent the information */
+  display: none;
+  /* Hide by default */
+}
+
+
+
+.info-visible {
+
+  display: flex;
+  flex-direction: row;
+  padding: 10px 20px;
+  margin: 10px 20px;
+
+}
+
+.info-visible .text-part{
+  padding: 10px 50px;
+}
+
+.info-visible h2{
+  font-size: 40px;
+  border-bottom: 2px solid #3B82F6;
+  padding: 10px 0;
+  width: 40%;
+}
+
+.info-visible p{
+  font-size: 24px;
+}
+
+.info-img{
+  width: 100%;
+  padding: 0 20px;
+}
+.info-img img{
+  width: auto;
+  height: 500px;
+}
+
+.main-card {
+  display: flex;
+  flex-direction: row;
+  /* width: 100%; */
+  /* padding: 15px 30px; */
+  max-height:600px ;
+  margin: 10px 20px;
+}
+
+.card-blue {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background: #273953;
+  color: #FFFFFF;
+  padding: 10px 30px;
+  border-radius: 20px;
+  margin: 10px 30px;
+  /* height: 600px; */
+  
+}
+
+.card-blue h3 {
+  font-size: 35px;
+  width: 80%;
+  margin-left: -10px;
+}
+.card-blue p {
+  font-size: 16px;
+  /* width: 80%; */
+}
+
+.card-blue2 {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px 30px; */
+}
+
+.card2-inner {
+  display: flex;
+  flex-direction: row;
+ 
+    margin: 10px 0px;
+  
+}
+
+.card2-inner img{
+  width: 58px;
+  height: 58px;
+}
+
+.target {
+  width: 100%;
+  padding-right: 30px;
+}
+
+.card2-inner2 {
+  padding: 20px 0;
+  margin: 15px 0px;
+  background: #F5F5F5;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.card2-inner2 img {
+
+}
+
+.mantiya{
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.mantiya img {
+  height: 38px;
+  width: 38px;
+  margin: 10px 20px;
+}
+
+.mantiya p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.card2-inner3{
+  display: flex;
+  flex-direction: row;
+  background: #F4D07B;
+  border-radius: 15px;
+  margin: 20px 0px;
+}
+
+.card2-inner3 p,
+.card2-inner3 h3{
+  padding: 10px 20px;
+}
+
+.main-card2 {
+  display: flex;
+  flex-direction: row;
+  background: #F5F5F5;
+}
+
+
+
+.info-part {
+  width: 50%;
+  padding: 20px 40px;
+  margin: 20px 40px;
+  border-radius: 15px;
+}
+
+.info-part span{
+  background: #F3D07B;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.info-part .span {
+  
+  
+  display: flex;
+  justify-content: center;
+}
+.part-year {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+  
+  
+}
+
+.part-year img {
+  height: 15px;
+  width: 15px;
+  margin: 0px 10px;
+}
+
+
+.cert {
+  position: relative;
+}
+
+.year {
+  position: absolute;
+  background: #F3D07B;
+  left: 20%;
+  right: 20%;
+  bottom: -5px;
+  font-size: 20px;
+  padding: 5px 0px;
+  border-radius: 10px;
+  justify-content: center;
+  text-align: center;
+ 
+}
+
+.cert-inn {
+  display: flex;
+  flex-direction: column;
+  /* padding: 20px; */
+  
+}
+
+.cert-inn .cert .suret {
+    margin-left: 40px;
+}
+
+.cert1 {
+  display: flex;
+  flex-direction: row;
+  /* padding: 20px 10px; */
+}
+.cert-inn h3,
+.cert-inn span {
+  
+  text-align: center;
+  padding: 0px 20px;
+  height: 30px;
+}
+
+.cert2 {
+  display: flex;
+    flex-direction: row;
+    padding: 20px 10px;
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.cert2-inn {
+  padding: 0 20px;
+}
+.cert2-inn h3,
+.cert2-inn span{
+  padding: 0 10px;
+  /* margin: 20px 30px; */
+  
+  text-align: center;
+}
+
+
+
+
+
+.check .cool {
+  background: #F3D07B;
+  /* padding: 10px; */
+  /* margin-bottom: 20px; */
+  border-radius: 10px;
+  text-align: center ;
+}
+
+.check .span {
+
+
+  display: flex;
+  justify-content: center;
+}
+
+.consultation {
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  margin: 20px;
+  background: #F5F5F5;
+  border-radius: 15px;
+}
+
+.consultation .first-cons {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  padding: 0px 20px;
+  
+  
+}
+
+.first-cons .inputs input {
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid;
+  margin: 10px 20px ;
+  
+}
+
+.first-cons .inputs {
+  margin: 30px 0;
+}
+
+.first-cons button {
+  background: #273953;
+  color: #ffffff;
+  padding: 20px;
+  font-size: 16px;
+  border-radius: 15px;
+}
+
+/* .first-cons  */
+
+.first-cons h2,
+.first-cons p {
+  text-align: left;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+
+.cards-inn {
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.circle {
+  width: 60px;
+  /* Set the width of the circle */
+  height: 60px;
+  /* Set the height of the circle */
+  border-radius: 50%;
+  /* Makes the div a circle */
+  background-color: #273953;
+  /* Optional: Set a background color for the circle */
+  display: flex;
+  /* Use flexbox to center the image */
+  justify-content: center;
+  /* Center the image horizontally */
+  align-items: center;
+  /* Center the image vertically */
+  overflow: hidden;
+  /* Ensures the image fits within the circle */
+  margin: 0px 20px 10px;
+    /* padding: 20px 0; */
+ 
+}
+
+.circle img {
+ 
+  width: 100%;
+  /* Ensure the image fills the circle */
+  height: auto;
+  /* Maintain the aspect ratio of the image */
+  object-fit: cover;
+  /* Ensures the image covers the circle */
+}
+
+.info-card {
+  margin: 20px 20px 10px;
+  padding: 20px 0;
+  background: #F5F5F5;
+  border-radius: 20px;
+  height: 300px;
+  width: 350px;
+}
+
+.info-card h3,
+.info-card p {
+  margin: 10px 5px;
+  padding: 5px 20px;
+}
+
+.bg-white {
+  background-color: #ffffff;
+  border: 1px solid;
+}
+
+
+.card-effect {
+  display: flex;
+  background: #273953;
+  border-radius: 20px;
+  margin: 20px 40px;
+  height: auto;
+  color: white;
+  padding: 20px 0;
+}
+
+.effect-work {
+  width: 60%;
+  padding: 0 40px;
+  
+}
+.effect-work h3{
+  font-size: 35px;
+  width: 70%;
+}
+.effect-work p{
+  font-size: 26px;
+  width: 70%;
+}
+
+.gmat {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.gmat .circler {
+  background: #F3D07B;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+ align-items: center;
+ justify-content: center;
+ text-align: center;
+ padding: 10px;
+ color: black;
+ font-weight: 600;
+ margin-right: -25%;
+ margin-top: -20%;
+position: absolute;
+}
+.gmat img {
+  
+  height: 300px;
+}
+
+.baza {
+  display: flex;
+  
+}
+
+.baza .baza-1 {
+  background:  #F3D07B;
+  border-radius: 15px;
+  margin: 10px 40px;
+  display: flex;
+    flex-direction: row;
+
+}
+
+.kart {
+  height: auto;
+  
+}
+
+.kart p {
+  font-size: 20px;
+  font-weight: bold;
+  /* margin: 10x 30px; */
+  padding: 10px 20px;
+  width: 80%;
+  
+}
+.baza-2 p {
+  font-size: 20px;
+  font-weight: bold;
+  /* margin: 10x 30px; */
+  width: 80%;
+  padding: 10px 20px;
+}
+
+.kart .cv {
+  position:absolute;
+  margin: 3% 0 0 -26%;
+  
+}
+
+.karter {
+  height: auto;
+  margin-top: -20%;
+}
+.karter .cver {
+  position:absolute;
+  margin: 9% 0 0 -33%;
+  
+}
+
+.circ {
+  width: 140px;
+  height: 80px;
+  background: #ffffff;
+  position: relative;
+  transform: translateX(50%);
+  left: -45%;
+  top: 37%;
+  border-radius: 50%;
+  border: 1px solid;
+  display: flex;
+align-items: center;
+  text-align: center;
+}
+
+.baza .baza-2 {
+  background: #F5F5F5;
+  border-radius: 15px;
+  margin: 10px 40px;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.differ-text-inn {
+  display: flex;
+}
+
+.differ {
+  display: flex;
+  margin: 20px;
+}
+
+.differ-image img{
+  height: 600px;
+  width: 350px;
+  margin: 0 20px;
+}
+.differ-image{
+  display: flex;
+  width: 30%;
+  /* height: 350px; */
+}
+.main-textp {
+  padding: 20px 10px;
+}
+
+.main-textp img {
+  margin: 10px 20px;
+  height: 24px;
+  width: 24px;
+}
+
+.main-textp h3,
+.main-textp  p {
+  padding: 5px 10px;
+  margin: 0px 10px
+}
+
+.comfortable {
+  display: flex;
+}
+.comfort-text {
+  width:50%
+}
+
+
+
+.comfort-text button {
+  margin: 10px 20px;
+  padding: 12px 12px;
+  
+}
+
+.comfort-text h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.comfort-text p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+
+.comfort-image {
+  display: flex;
+  justify-content: center;
+  /* Center images horizontally */
+  align-items: center;
+  /* Center images vertically */
+  position: relative;
+  margin:20px 20px;
+  /* For positioning the blue circle and second image */
+}
+
+.comfort-image .iliyas {
+  width: 300px;
+  height: 200px;
+  margin: 10px 10px;
+}
+
+.comfort-image div {
+  position: relative; 
+  /* Container for each image set */
+}
+
+.about-me {
+  display: flex;
+  margin: 40px;
+}
+
+.about-me .about1 {
+  background: #F5F5F5;
+  margin: 10px 20px;
+  border-radius: 20px;
+
+}
+
+.about1 p {
+  line-height: 1.7;
+  margin-left: 20px;
+}
+
+.about-card {
+  display: flex;
+  margin: 10px 20px;
+}
+
+
+.about-card1 {
+  border-radius: 20px;
+  border: 1px solid;
+  margin: 10px 15px;
+}
+
+.about-card1 h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+}
+
+.about-card1 p {
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+.princ {
+  display: flex;
+  margin: 20px;
+  padding: 40px 20px;
+  align-items: center;
+  background: #F3D07B;
+  border-radius: 20px;
+}
+
+.princ h1 {
+  margin-left:30px
+}
+.princ p{
+  padding: 5px 50px;
+}
+
+
+
+.contacts-part {
+  display: flex;
+  margin: 10px;
+  align-items: center;
+}
+
+.first-contact {
+  background: #F5F5F5;
+  border-radius: 15px;
+  margin: 20px;
+  margin-left: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  
+  
+}
+
+.first-contact h3 {
+  font-size: 33px;
+}
+
+.first-contact div {
+  margin-left: 50px;
+}
+
+.contacts-part img {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
+
+}
+
+.contact-section {
+  display: flex;
+  
+}
+
+.second-map img {
+  margin: 20px;
+  height: 300px;
+}
+
+/* Контейнер карусели */
+.carousel-container {
+  position: relative;
+  width: 1000px;
+  /* Ширина для 3 изображений по 300px */
+  margin: 0 auto;
+  overflow: hidden;
+  /* border: 2px solid #ddd; */
+  /* border-radius: 10px; */
+}
+
+/* Слайд карусели */
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Каждый элемент карусели */
+.carousel-item {
+  min-width: 33.33%;
+  /* Теперь каждый элемент занимает треть ширины */
+  box-sizing: border-box;
+  /* margin: 5px 10px; */
+  
+  
+  
+}
+
+.carousel-item h3,
+.carousel-item p {
+  text-align: center;
+}
+.carousel-item img {
+  width: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* Кнопки карусели */
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+  z-index: 2;
+}
+
+.prev-btn {
+  /* left: 10px; */
+  right: 10px;
+}
+
+.next-btn {
+  left: 10px;
+  /* right: 10px; */
+}
+
+/* Точки */
+.dots-container {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #717171;
 }
